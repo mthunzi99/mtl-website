@@ -1,7 +1,7 @@
 import React from "react";
 import { CgChevronDown } from "react-icons/cg";
 
-export const DesktopMenu = ({ menu }) => {
+const DesktopMenu = ({ menu }) => {
   // Checking if the menu has a sub menu
   const hasSubMenu = menu?.subMenu?.length > 0;
   return (
@@ -35,3 +35,4 @@ export const DesktopMenu = ({ menu }) => {
     </li>
   );
 };
+export default DesktopMenu;
