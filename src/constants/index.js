@@ -1,5 +1,42 @@
 export const navigation = [
-  { id: "0", title: "Home", url: "#Home" },
-  { id: "1", title: "Services", url: "#Services" },
-  { id: "2", title: "About", url: "#About" },
+  {
+    id: 0,
+    title: "About Us",
+    subMenuHeadings: ["About", "Customer Service Charter"],
+    subMenu: [
+      { title: "About", url: "#About" },
+      { title: "Customer Service Charter", url: "#Customer-Service-Charter" },
+    ],
+  },
+  {
+    id: 1,
+    title: "Solutions",
+    subMenuHeadings: [
+      "Business",
+      "Wholesale",
+      "Consumer",
+      "Hosted Services, Devices and Accessories",
+    ],
+    subMenu: [
+      { title: "Business", url: "#Business" },
+      { title: "Wholesale", url: "#Wholesale" },
+      { title: "Consumer", url: "#Consumer" },
+      { title: "Hosted Services", url: "#Hosted-Services" },
+      { title: "Devices and Accessories", url: "#Devices-and-Accessories" },
+    ],
+  },
+  { id: 2, title: "Tariffs", url: "#Tariffs" },
+  { id: 3, title: "Self Care", url: "#Self-Care" },
+  {
+    id: 4,
+    title: "Support",
+    subMenuHeadings: ["FAQs", "Service Centres", "Airtime Topup", "Contact Us"],
+    subMenu: [
+      { title: "FAQs", url: "#FAQs" },
+      { title: "Service Centres", url: "#Service-Centres" },
+      { title: "Airtime Topup", url: "#Airtime-Topup" },
+      { title: "Contact Us", url: "#Contact-Us" },
+    ],
+  },
+  { id: 5, title: "Phone Directory", url: "#Phone-Directory" },
 ];
