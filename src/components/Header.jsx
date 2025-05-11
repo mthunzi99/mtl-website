@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import mtlLogo from "../assets/MTL Logo.svg";
 import { navigation } from "../constants/index.js";
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import DesktopMenu from "./DesktopMenu.jsx";
 import MobileMenu from "./MobileMenu.jsx";
 
@@ -11,7 +10,7 @@ export const Header = () => {
 
   return (
     <div>
-      <header className="h-16 text-15px fixed inset-0 flex-center bg-secondary">
+      <header className="h-17 text-15px fixed inset-0 flex-center bg-secondary z-9999 shadow-md">
         <nav className="px-4 flex-center-between w-full max-w-7xl mx-auto">
           <a href="#home">
             <img src={mtlLogo} alt="MTL Logo" className="h-10 cursor-pointer" />

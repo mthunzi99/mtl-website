@@ -20,3 +20,7 @@
         @apply flex items-center justify-between;
     }
 }
+
+.swiper-pagination {
+    size: 0.3rem;
+}
