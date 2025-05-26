@@ -38,7 +38,7 @@ const Hero = () => {
                       {item.description}
                     </p>
                     <div>
-                      <button className="bg-gradient-to-l from-primary to-[#215cbc] text-white px-4 py-2 rounded-full hover:scale-105 duration-200">
+                      <button className="bg-gradient-to-l from-primary to-[#215cbc] text-white px-4 py-2 rounded-full hover:scale-105 duration-200 cursor-pointer">
                         Check Now
                       </button>
                     </div>

@@ -10,16 +10,15 @@ export const Header = () => {
 
   return (
     <div>
-      <header className="h-17 text-15px fixed inset-0 flex-center bg-secondary z-9999 shadow-md">
+      <header className="h-18 text-[15px] fixed inset-0 flex-center bg-secondary z-9999 shadow-md">
         <nav className="px-4 flex-center-between w-full max-w-7xl mx-auto">
           <a href="#home">
             <img src={mtlLogo} alt="MTL Logo" className="h-10 cursor-pointer" />
           </a>
 
           {/* menus */}
-
           {/* Desktop Menu */}
-          <ul className="md:flex lg:items-center lg:justify-center hidden text-primary gap-3">
+          <ul className="lg:flex lg:items-center lg:justify-center hidden text-primary gap-3">
             {navigation.map((menu) => (
               <DesktopMenu menu={menu} key={menu.id} />
             ))}

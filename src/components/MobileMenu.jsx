@@ -28,7 +28,7 @@ const MobileMenu = ({ menu }) => {
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? 0 : "-20%" }}
         onClick={toggleDrawer}
-        className="text-2xl font-medium"
+        className="text-2xl font-medium cursor-pointer"
       >
         {isOpen ? <CgClose /> : <CgMenu />}
       </motion.button>
@@ -46,13 +46,13 @@ const MobileMenu = ({ menu }) => {
               <li key={i} className="group border-b-4 border-white/20">
                 <span
                   onClick={() => setClicked(isClicked ? null : i)}
-                  className="flex-center-between gap-2 text-2xl font-medium p-4 hover:bg-white/70 rounded-lg cursor-pointer relative"
+                  className="flex-center-between gap-2 text-2xl font-medium p-4 hover:bg-white/75 rounded-lg cursor-pointer relative"
                 >
                   {title}
                   {hasSubMenu && (
                     <CgChevronDown
                       className={`text-xl mt-[0.6px] transition-all ${
-                        isClicked && "group-hover:rotate-180 duration-200"
+                        isClicked && "rotate-180 duration-200"
                       }`}
                     />
                   )}
@@ -67,7 +67,7 @@ const MobileMenu = ({ menu }) => {
                     {subMenu.map((subMenuItem, j) => (
                       <li
                         key={j}
-                        className="text-lg border-b-1 px-4 py-2 rounded-lg hover:bg-white/85"
+                        className="text-lg border-b-1 px-4 py-2 rounded-lg hover:bg-white/75"
                       >
                         <a href={subMenuItem.url}>
                           <div>{subMenuItem.title}</div>

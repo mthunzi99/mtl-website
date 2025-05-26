@@ -5,16 +5,16 @@ const DesktopMenu = ({ menu }) => {
   // Checking if the menu has a sub menu
   const hasSubMenu = menu?.subMenu?.length > 0;
   return (
-    <li className="relative group flex-center text-primary text-[15px] font-medium">
+    <li className="relative group flex-center text-primary text-[15px] font-bold">
       {hasSubMenu ? (
-        <div className="flex-center gap-1 cursor-pointer px-3 py-1 rounded-xl hover:bg-primary/70 hover:text-white transition-all duration-300 ease-in-out">
+        <div className="flex-center gap-1 cursor-pointer px-3 py-1 rounded-xl hover:bg-white/70 hover:text-primary transition-all duration-300 ease-in-out">
           <span>{menu.title}</span>
           <CgChevronDown className="text-xl mt-[0.6px] group-hover:rotate-180 duration-200" />
         </div>
       ) : (
         <a
           href={menu.url}
-          className="flex-center gap-1 px-3 py-1 rounded-xl hover:bg-primary/70 hover:text-white transition-all duration-300 ease-in-out"
+          className="flex-center gap-1 px-3 py-1 rounded-xl hover:bg-white/70 hover:text-primary transition-all duration-300 ease-in-out"
         >
           {menu.title}
         </a>
